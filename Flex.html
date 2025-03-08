@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+    <style>
+        .conteiner{
+            display: flex;
+            gap: 15px;
+        }
+        .conteiner2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box{
+            background-color: aquamarine;
+            padding: 20px;
+            border: 2px solid blue;
+            border-radius: 20px;
+            margin: 20px;
+        }
+        .item{
+            width: 200px;
+            height: 100px;
+            background-color: blueviolet;
+            border: 2px solid orangered;
+            margin: 15px;
+        }
+        @media screen and (max-width: 576px) {
+            .conteiner{
+                flex-direction: column;
+            }
+            .box{
+                background-color: red;
+                border: 10px dashed green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Flexible Flex</h2>
+    <div class="conteiner">
+        <div class="box">
+            <h3>First Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis voluptatum minima architecto ipsum necessitatibus consequatur a beatae pariatur animi! Error nostrum similique molestias, facilis assumenda ullam excepturi velit quas, voluptates reiciendis autem voluptatum, perspiciatis veritatis expedita saepe dicta libero modi delectus? Vel necessitatibus magni ex. Autem delectus facere quibusdam expedita?</p>
+        </div>
+        <div class="box">
+            <h3>Second Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis voluptatum minima architecto ipsum necessitatibus consequatur a beatae pariatur animi! Error nostrum similique molestias, facilis assumenda ullam excepturi velit quas, voluptates reiciendis autem voluptatum, perspiciatis veritatis expedita saepe dicta libero modi delectus? Vel necessitatibus magni ex. Autem delectus facere quibusdam expedita?</p>
+        </div>
+    </div>
+    <div class="conteiner2">
+        <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+    </div>
+    
+</body>
+</html>
